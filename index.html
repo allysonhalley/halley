@@ -161,12 +161,12 @@
 				<div class="col-lg-8 col-lg-offset-2">
 					<!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
 					<!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-					<form name="sentMessage" id="contactForm" novalidate action="https://formspree.io/your@email.com" method="POST">
+					<form name="sentMessage" id="contactForm" novalidate action="https://formspree.io/contato@hefti.com.br" method="POST">
 						<div class="row control-group">
 							<div
 								class="form-group col-xs-12 floating-label-form-group controls">
 								<label>Nome</label> <input type="text" class="form-control"
-									placeholder="Nome" id="name" required
+									placeholder="Nome" id="name" required name="name"
 									data-validation-required-message="Por favor insira seu nome.">
 								<p class="help-block text-danger"></p>
 							</div>
@@ -175,7 +175,7 @@
 							<div
 								class="form-group col-xs-12 floating-label-form-group controls">
 								<label>E-mail</label> <input type="email" class="form-control"
-									placeholder="E-mail" id="email" required
+									placeholder="E-mail" id="email" name="email" required
 									data-validation-required-message="Por favor insira seu endereço de email.">
 								<p class="help-block text-danger"></p>
 							</div>
@@ -184,7 +184,7 @@
 							<div
 								class="form-group col-xs-12 floating-label-form-group controls">
 								<label>Telefone</label> <input type="tel" class="form-control"
-									placeholder="Telefone" id="phone" required
+									placeholder="Telefone" id="phone" name="phone" required
 									data-validation-required-message="Por favor insira seu insira seu contato de telefone.">
 								<p class="help-block text-danger"></p>
 							</div>
